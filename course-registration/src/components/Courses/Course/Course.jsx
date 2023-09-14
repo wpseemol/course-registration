@@ -11,7 +11,7 @@ const Course = ({ coursItemObj }) => {
         <img
           src={image}
           alt={course_title}
-          className="rounded-lg border h-80 object-contain bg-coustomBgColor"
+          className="rounded-lg border 2xl:h-80 object-contain bg-coustomBgColor"
         />
       </figure>
       <div className="card-body p-4 pt-0 rounded-xl">
