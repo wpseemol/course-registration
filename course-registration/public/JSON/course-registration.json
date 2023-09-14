@@ -1,0 +1,74 @@
+[
+  {
+    "id": "COURSE005",
+    "image": "https://i.ibb.co/6mqNqdK/Java-Fundamentals.jpg",
+    "price": 349.99,
+    "credit_hour": 3,
+    "course_title": "Java Fundamentals",
+    "description": "Learn the basics of Java programming, including object-oriented concepts, data structures, and algorithms."
+  },
+  {
+    "id": "COURSE006",
+    "image": "https://i.ibb.co/5sBmK2g/Front-End-Web-Development-with-React.png",
+    "price": 299.99,
+    "credit_hour": 2,
+    "course_title": "Front-End Web Development with React",
+    "description": "Master React.js and build dynamic user interfaces for modern web applications."
+  },
+  {
+    "id": "COURSE007",
+    "image": "https://i.ibb.co/P5xK2RJ/Python-for-Machine-Learning.webp",
+    "price": 449.99,
+    "credit_hour": 4,
+    "course_title": "Python for Machine Learning",
+    "description": "Explore machine learning techniques and libraries in Python for predictive modeling and data analysis."
+  },
+  {
+    "id": "COURSE008",
+    "image": "https://i.ibb.co/0y8tkgR/Introduction-to-Algorithms.jpg",
+    "price": 199.99,
+    "credit_hour": 1,
+    "course_title": "Introduction to Algorithms",
+    "description": "Understand algorithmic problem-solving strategies and their applications in computer science."
+  },
+  {
+    "id": "COURSE009",
+    "image": "https://i.ibb.co/KqmKZLy/Full-Stack-Web-Development-with-Node-js.jpg",
+    "price": 399.99,
+    "credit_hour": 3,
+    "course_title": "Full-Stack Web Development with Node.js",
+    "description": "Build end-to-end web applications using Node.js, Express, and a modern front-end framework."
+  },
+  {
+    "id": "COURSE010",
+    "image": "https://i.ibb.co/cgPrJxX/Introduction-to-Data-Structures.gif",
+    "price": 249.99,
+    "credit_hour": 2,
+    "course_title": "Introduction to Data Structures",
+    "description": "Learn about fundamental data structures such as arrays, linked lists, and trees, and their implementations in programming."
+  },
+  {
+    "id": "COURSE011",
+    "image": "https://i.ibb.co/tM9B9L7/Mobile-App-Development-with-Flutter.gif",
+    "price": 499.99,
+    "credit_hour": 4,
+    "course_title": "Mobile App Development with Flutter",
+    "description": "Create cross-platform mobile apps with Flutter and Dart, covering UI design and app deployment."
+  },
+  {
+    "id": "COURSE012",
+    "image": "https://i.ibb.co/pRPDsgw/Database-Design-and-SQL-Fundamentals.gif",
+    "price": 299.99,
+    "credit_hour": 3,
+    "course_title": "Database Design and SQL Fundamentals",
+    "description": "Master database design principles and SQL to efficiently manage and query relational databases."
+  },
+  {
+    "id": "COURSE013",
+    "image": "https://i.ibb.co/6wH8V0Q/Cybersecurity-Essentials.gif",
+    "price": 349.99,
+    "credit_hour": 2,
+    "course_title": "Cybersecurity Essentials",
+    "description": "Learn the basics of cybersecurity, including threat detection, encryption, and best practices for online security."
+  }
+]
