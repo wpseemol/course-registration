@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Course from "./Course/Course";
+import CourseSeclection from "../course-seclection/CourseSeclection";
 
 const Courses = () => {
   const [coursesItems, setCoursesItem] = useState([]);
@@ -23,8 +24,8 @@ const Courses = () => {
         </section>
 
         {/* Courses selection section */}
-        <section className="bg-white rounded-xl">
-          Course seclection sefcton
+        <section>
+          <CourseSeclection />
         </section>
       </section>
     </main>
