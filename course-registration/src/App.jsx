@@ -4,6 +4,7 @@ import Courses from "./components/Courses/Courses";
 function App() {
   return (
     <>
+      
       <Header />
       <Courses />
     </>

@@ -22,4 +22,8 @@
    .mb-customMarginBottom{
     margin-bottom: 3.125rem;
    }
+
+   .bg-coustomBgColor {
+    background-color: #2f81ed15;
+   }
 }
