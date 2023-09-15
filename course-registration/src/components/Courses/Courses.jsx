@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Course from "./Course/Course";
 import CourseSeclection from "../course-seclection/CourseSeclection";
@@ -58,6 +59,11 @@ const Courses = () => {
       </section>
     </main>
   );
+};
+
+Courses.propTypes = {
+  id: PropTypes.string.isRequired,
+  credit_hour: PropTypes.number.isRequired,
 };
 
 export default Courses;

@@ -1,17 +1,17 @@
+import PropTypes from "prop-types";
 import dollarSign from "../../../assets/dollarSign.svg";
 import Frame from "../../../assets/Frame.svg";
 
 const Course = ({ coursItemObj, handelClickCoursItem }) => {
-  const { id, image, price, credit_hour, course_title, description } =
-    coursItemObj;
+  const { image, price, credit_hour, course_title, description } = coursItemObj;
 
   return (
     <div className="card bg-white rounded-xl">
-      <figure className="p-4  ">
+      <figure className="m-4  border rounded-lg">
         <img
           src={image}
           alt={course_title}
-          className="rounded-lg border 2xl:h-80 object-contain bg-coustomBgColor"
+          className="2xl:h-60 object-contain bg-coustomBgColor"
         />
       </figure>
       <div className="card-body p-4 pt-0 rounded-xl">
@@ -47,6 +47,11 @@ const Course = ({ coursItemObj, handelClickCoursItem }) => {
       </div>
     </div>
   );
+};
+
+Course.propTypes = {
+  coursItemObj: PropTypes.object.isRequired,
+  handelClickCoursItem: PropTypes.func.isRequired,
 };
 
 export default Course;

@@ -1,7 +1,7 @@
 [
   {
     "id": "COURSE005",
-    "image": "https://i.ibb.co/6mqNqdK/Java-Fundamentals.jpg",
+    "image": "https://i.ibb.co/HzkKnpN/Java-Fundamentals.gif",
     "price": 349.99,
     "credit_hour": 3,
     "course_title": "Java Fundamentals",
@@ -9,7 +9,7 @@
   },
   {
     "id": "COURSE006",
-    "image": "https://i.ibb.co/5sBmK2g/Front-End-Web-Development-with-React.png",
+    "image": "https://i.ibb.co/zbZDksm/Front-End-Web-Development-with-React.gif",
     "price": 299.99,
     "credit_hour": 2,
     "course_title": "Front-End Web Development with React",
@@ -17,7 +17,7 @@
   },
   {
     "id": "COURSE007",
-    "image": "https://i.ibb.co/P5xK2RJ/Python-for-Machine-Learning.webp",
+    "image": "https://i.ibb.co/C9WjJLK/Python-for-Machine-Learning.gif",
     "price": 449.99,
     "credit_hour": 4,
     "course_title": "Python for Machine Learning",
@@ -25,7 +25,7 @@
   },
   {
     "id": "COURSE008",
-    "image": "https://i.ibb.co/0y8tkgR/Introduction-to-Algorithms.jpg",
+    "image": "https://i.ibb.co/kcgZp4Q/Introduction-to-Algorithms.gif",
     "price": 199.99,
     "credit_hour": 1,
     "course_title": "Introduction to Algorithms",
@@ -33,7 +33,7 @@
   },
   {
     "id": "COURSE009",
-    "image": "https://i.ibb.co/KqmKZLy/Full-Stack-Web-Development-with-Node-js.jpg",
+    "image": "https://i.ibb.co/19wgSRd/full-stack-development.gif",
     "price": 399.99,
     "credit_hour": 3,
     "course_title": "Full-Stack Web Development with Node.js",
@@ -49,7 +49,7 @@
   },
   {
     "id": "COURSE011",
-    "image": "https://i.ibb.co/tM9B9L7/Mobile-App-Development-with-Flutter.gif",
+    "image": "https://i.ibb.co/W3MyPZL/Mobile-App-Development-with-Flutter.gif",
     "price": 499.99,
     "credit_hour": 4,
     "course_title": "Mobile App Development with Flutter",
