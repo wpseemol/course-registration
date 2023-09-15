@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import Course from "./Course/Course";
 import CourseSeclection from "../course-seclection/CourseSeclection";
+import { ToastContainer, toast } from "react-toastify";
 
+const clickedId = [];
+const creditHour = [];
 const Courses = () => {
   const [coursesItems, setCoursesItem] = useState([]);
 
@@ -11,16 +14,24 @@ const Courses = () => {
       .then((data) => setCoursesItem(data));
   }, []);
 
-  // click event add 
+  // click event add
+
   const [clickCoursItem, setClickCoursItem] = useState([]);
-  const handelClickCoursItem = (props)=> {
-   
+  const handelClickCoursItem = (props) => {
+    if (!clickedId.includes(props.id)) {
+      creditHour.push(props.credit_hour);
+      let totalHour = creditHour.reduce((first, secent) => first + secent, 0);
+      if (totalHour <= 20) {
+        setClickCoursItem([...clickCoursItem, props]);
+      } else {
+        toast("Credit Hour Remaining is More Then 20hr.plase releod");
+      }
 
-
-    setClickCoursItem([...clickCoursItem, props]);
-  } 
-  
-
+      clickedId.push(props.id);
+    } else {
+      toast("The course is pre-selected!");
+    }
+  };
 
   return (
     <main className="sm:mx-8 sm:mt-6 lg:mx-customMargin mx-3 mt-2">

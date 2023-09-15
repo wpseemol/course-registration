@@ -37,7 +37,9 @@ const Course = ({ coursItemObj, handelClickCoursItem }) => {
         <div className="card-actions mt-6">
           <button
             className="btn btn-primary capitalize w-full text-lg"
-            onClick={() => handelClickCoursItem(coursItemObj)}
+            onClick={() => {
+              handelClickCoursItem(coursItemObj);
+            }}
           >
             Select
           </button>

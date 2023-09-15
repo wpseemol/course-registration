@@ -3,27 +3,26 @@
 @tailwind utilities;
 
 @layer base {
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap');
-  body{
-    font-family: 'Inter', sans-serif;
-    background-color: #F3F3F3;
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap");
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: #f3f3f3;
   }
 }
 @layer utilities {
-   .text-headFontSize{
+  .text-headFontSize {
     font-size: 2rem;
-   }
-   .mx-customMargin{
+  }
+  .mx-customMargin {
     margin-left: 3.75rem;
     margin-right: 3.75rem;
     margin-top: 3.125rem;
-    
-   }
-   .mb-customMarginBottom{
+  }
+  .mb-customMarginBottom {
     margin-bottom: 3.125rem;
-   }
+  }
 
-   .bg-coustomBgColor {
+  .bg-coustomBgColor {
     background-color: #2f81ed15;
-   }
+  }
 }
