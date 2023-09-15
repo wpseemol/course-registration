@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Course from "./Course/Course";
 import CourseSeclection from "../course-seclection/CourseSeclection";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const clickedId = [];
 const creditHour = [];

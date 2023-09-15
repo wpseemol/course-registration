@@ -43,7 +43,7 @@
     "id": "COURSE010",
     "image": "https://i.ibb.co/cgPrJxX/Introduction-to-Data-Structures.gif",
     "price": 249.99,
-    "credit_hour": 2,
+    "credit_hour": 10,
     "course_title": "Introduction to Data Structures",
     "description": "Learn about fundamental data structures such as arrays, linked lists, and trees, and their implementations in programming."
   },
