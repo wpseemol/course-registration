@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 
 const clickedId = [];
 const creditHour = [];
+
 const Courses = () => {
   const [coursesItems, setCoursesItem] = useState([]);
 
