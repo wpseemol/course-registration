@@ -1,4 +1,4 @@
-import { ToastContainer, toast } from "react-toastify";
+import PropTypes from "prop-types";
 
 const CourseSeclection = ({ clickCoursItemObj }) => {
   let isSelecteItem =
@@ -55,5 +55,13 @@ const CourseSeclection = ({ clickCoursItemObj }) => {
 function Title({ title }) {
   return <li className="pb-2">{title}</li>;
 }
+
+CourseSeclection.propTypes = {
+  clickCoursItemObj: PropTypes.object.isRequired,
+};
+
+Title.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default CourseSeclection;
