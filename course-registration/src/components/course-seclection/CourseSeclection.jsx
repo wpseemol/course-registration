@@ -16,7 +16,7 @@ const CourseSeclection = ({ clickCoursItemObj }) => {
   remCreditHour -= creditHour;
 
   return (
-    <div className="card xl:w-80 bg-white rounded-xl p-6">
+    <div className="card xl:w-80 lg:w-48 w-96 bg-white rounded-xl p-6">
       <h2
         className="text-lg font-bold border-b-2
            pb-4 text-primary"

@@ -34,7 +34,7 @@ const Courses = () => {
   };
 
   return (
-    <main className="sm:mx-8 sm:mt-6 lg:mx-customMargin mx-3 mt-2">
+    <main className="sm:mx-8 sm:mt-6 lg:mx-customMargin mx-3 mt-2 mb-20">
       <section className="flex justify-center gap-6 flex-col lg:flex-row items-center lg:items-start">
         {/* Courses section  */}
 
