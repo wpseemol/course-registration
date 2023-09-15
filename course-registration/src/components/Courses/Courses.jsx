@@ -11,6 +11,17 @@ const Courses = () => {
       .then((data) => setCoursesItem(data));
   }, []);
 
+  // click event add 
+  const [clickCoursItem, setClickCoursItem] = useState([]);
+  const handelClickCoursItem = (props)=> {
+   
+
+
+    setClickCoursItem([...clickCoursItem, props]);
+  } 
+  
+
+
   return (
     <main className="sm:mx-8 sm:mt-6 lg:mx-customMargin mx-3 mt-2">
       <section className="flex justify-center gap-6 flex-col lg:flex-row items-center lg:items-start">
@@ -19,13 +30,19 @@ const Courses = () => {
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {coursesItems.map((coursesItem) => {
             console.log();
-            return <Course key={coursesItem.id} coursItemObj={coursesItem} />;
+            return (
+              <Course
+                key={coursesItem.id}
+                coursItemObj={coursesItem}
+                handelClickCoursItem={handelClickCoursItem}
+              />
+            );
           })}
         </section>
 
         {/* Courses selection section */}
         <section>
-          <CourseSeclection />
+          <CourseSeclection clickCoursItemObj={clickCoursItem} />
         </section>
       </section>
     </main>

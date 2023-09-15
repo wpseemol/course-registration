@@ -1,10 +1,10 @@
 import dollarSign from "../../../assets/dollarSign.svg";
 import Frame from "../../../assets/Frame.svg";
 
-const Course = ({ coursItemObj }) => {
+const Course = ({ coursItemObj, handelClickCoursItem }) => {
   const { id, image, price, credit_hour, course_title, description } =
     coursItemObj;
- 
+
   return (
     <div className="card bg-white rounded-xl">
       <figure className="p-4  ">
@@ -35,7 +35,10 @@ const Course = ({ coursItemObj }) => {
           </p>
         </div>
         <div className="card-actions mt-6">
-          <button className="btn btn-primary capitalize w-full text-lg">
+          <button
+            className="btn btn-primary capitalize w-full text-lg"
+            onClick={() => handelClickCoursItem(coursItemObj)}
+          >
             Select
           </button>
         </div>

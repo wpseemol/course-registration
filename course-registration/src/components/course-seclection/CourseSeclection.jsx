@@ -1,39 +1,66 @@
 
 
-const CourseSeclection = () => {
-    return (
-      <div className="card w-80 bg-white rounded-xl p-6">
-        <h2
-          className="text-lg font-bold border-b-2
+const CourseSeclection = ({ clickCoursItemObj }) => {
+  let isSelecteItem =
+  clickCoursItemObj.length < 0 ? 0 : clickCoursItemObj.length;
+  let remCreditHour = 20
+  let creditHour = 0;
+  let totalPrice = 0;
+  if(!isSelecteItem <= 0){
+        clickCoursItemObj.forEach((element) => {
+          creditHour += element.credit_hour;
+          totalPrice += element.price;
+        });
+      }
+      remCreditHour -= creditHour;
+
+     
+
+      if (remCreditHour < 0){
+          location.reload();
+      }
+        
+
+        return (
+          <div className="card w-80 bg-white rounded-xl p-6">
+            <h2
+              className="text-lg font-bold border-b-2
            pb-4 text-primary"
-        >
-          Credit Hour Remaining <span>7</span> hr
-        </h2>
+            >
+              Credit Hour Remaining{" "}
+              <span>{!(remCreditHour < 0) ? remCreditHour : 0}</span>hr
+            </h2>
 
-        <div>
-          <h2
-            className="text-xl font-bold
+            <div className={isSelecteItem <= 0 ? "hidden" : ""}>
+              <h2
+                className="text-xl font-bold
                pt-4 pb-5"
-          >
-            Course Name
-          </h2>
+              >
+                Course Name
+              </h2>
 
-          <ol className="list-decimal list-inside text-base">
-            <li className="pb-2">Introduction to c programming</li>
-            <li className="pb-2">Introduction to c programming</li>
-            <li className="pb-2">Introduction to c programming</li>
-            <li className="pb-2">Introduction to c programming</li>
-          </ol>
+              <ol className="list-decimal list-inside text-base">
+                {!isSelecteItem <= 0
+                  ? clickCoursItemObj.map((element, inx) => {
+                      return <Title key={inx} title={element.course_title} />;
+                    })
+                  : ""}
+              </ol>
 
-          <h4 className="font-medium border-t-2 py-4 mt-4">
-            Total Credit Hour : <span>13</span>
-          </h4>
-          <h3 className="font-semibold border-t-2 py-4">
-            Total Price : <span>48000</span> USD
-          </h3>
-        </div>
-      </div>
-    );
+              <h4 className="font-medium border-t-2 py-4 mt-4">
+                Total Credit Hour : <span>{!(remCreditHour < 0)? creditHour : 0}</span>
+              </h4>
+              <h3 className="font-semibold border-t-2 py-4">
+                Total Price : <span>{totalPrice}</span> USD
+              </h3>
+            </div>
+          </div>
+        );
 };
+
+
+function Title ({title}){
+  return <li className="pb-2">{title}</li>;
+}
 
 export default CourseSeclection;
